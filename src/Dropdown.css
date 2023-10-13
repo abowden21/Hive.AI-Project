@@ -1,0 +1,103 @@
+.dropdown-container {
+    margin: 50px;
+}
+
+.dropdown {
+    position: relative;
+    width: 300px;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    width: 100%;
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color:#3578c0;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.options-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: linear-gradient(white, #f9f9f9);
+    max-height: 200px;
+    overflow-y: auto;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(5px);
+    opacity: 0;
+}
+
+.dropdown:hover .options-list {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.options-list li {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.options-list li:hover {
+    background-color: #e6f7ff;
+}
+
+.option-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.option-container input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-top: 1px solid #e1e1e1;
+    background-color: #f9f9f9;
+}
+
+.actions-container button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 8px 12px; 
+    background-color:#3578c0;
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+    font-size: 14px;
+}
+
+.actions-container button:hover {
+    background-color: #0056b3;
+}
+
+.actions-container button:first-child {
+    margin-left: 0;
+}
+
+.actions-container button:last-child {
+    margin-right: 0;
+}
